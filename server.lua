@@ -1,7 +1,6 @@
 local Framework = nil
 local FrameworkType = nil
 
--- Auto-detect framework
 if Config.Framework == 'auto' then
     if GetResourceState('qbx_core') == 'started' then
         Framework = exports['qb-core']:GetCoreObject()

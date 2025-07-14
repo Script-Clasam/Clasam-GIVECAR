@@ -1,16 +1,14 @@
 Config = {}
 
--- Framework Detection (Auto-detect or force specific framework)
+--Framework Detection (Auto-detect or force specific framework)
 Config.Framework = 'auto' -- 'auto', 'qbcore', 'qbx', 'esx'
-Config.CommandeName = 'givecara' -- Command name for giving vehicles
+Config.CommandeName = 'givecar' -- Command name for giving vehicles
 Config.Language = 'fr'
---Only for ESX 
+--Only for ESX :
 Config.type = 'vehicle' -- Type of vehicle, can be 'vehicle', 'boat', 'aircraft', etc.
 Config.Database = {
 
     tableName = 'owned_vehicles', -- 'player_vehicles' (QB/QBX) or 'owned_vehicles' (ESX)
-    
-    -- Column names mapping for different frameworks
     columns = {
         qb = {
             owner = 'citizenid',
@@ -46,7 +44,6 @@ Config.VehicleKeys = {
     system = 'auto', -- 'auto', 'qb-vehiclekeys', 'qs-vehiclekeys', 'cd_garage', 'esx_vehiclekeys'
 }
 
--- Notification System
 
 
 -- Messages (Multi-language support)
